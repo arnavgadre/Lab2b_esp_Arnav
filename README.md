@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/52575718/197112576-4f32b566-b347-42f6-
 <br>
 
 ## Plan Outline
-We plan to light 2 separate LEDs on our Breadboard using the RP20240 board. Two different LEDs will glow based on the input enetered by the user on the keyboard. When the 'C' key is pressed, the Green LED lights up. When the 'D' key is pressed, the Blue LED lights up. We use serial communication for controlling our LED this way. The 'SCL1' and 'SDA1' pins of the Adafruit QTPy RP2040 are conneted to the 'GPIO23' and 'GPIO22' pins respectively. This is evident from the RP2040 pinout diagram shown below.
+We plan to light 2 separate LEDs on our Breadboard using the RP20240 board. Two different LEDs will glow based on the input enetered by the user on the keyboard. When the `C` key is pressed, the Green LED lights up. When the `D` key is pressed, the Blue LED lights up. We use serial communication for controlling our LED this way. The `SCL1` and `SDA1` pins of the Adafruit QTPy RP2040 are conneted to the `GPIO23` and `GPIO22` pins respectively. This is evident from the RP2040 pinout diagram shown below.
 <br>
 
 ![image](https://user-images.githubusercontent.com/52575718/197116289-085e771a-cd86-4a01-ad12-84b62071e2f9.png)
@@ -18,7 +18,7 @@ The Link for this documentation is: [RP2040_Pinout](https://learn.adafruit.com/a
 
 <br>
 
-We are using the GPIO pins to control our LEDs. We have intitialized the GPIO22 and GPIO23 pins using the 'gpio_init' and 'gpio_det_dir' functions. The user input is being read using the 'getchar_timeout_us(5000)', which returns a character from 'stdin' if available. When 'C' is pressed, the message "GREEN SHOULD BE ON" is printed on the Serial Output, and the Green LED lights up. When 'D' is pressed, the message "BLUE SHOULD BE ON" is printed on the Serial Output, and the Blue LED lights up. We drive the GPIO pins High and LOW using the 'gpio_put' functions.
+We are using the GPIO pins to control our LEDs. We have intitialized the `GPIO22` and `GPIO23` pins using the `gpio_init` and `gpio_det_dir` functions. The user input is being read using the `getchar_timeout_us(5000)`, which returns a character from `stdin` if available. When `C` is pressed, the message "GREEN SHOULD BE ON" is printed on the Serial Output, and the Green LED lights up. When `D` is pressed, the message "BLUE SHOULD BE ON" is printed on the Serial Output, and the Blue LED lights up. We drive the GPIO pins High and LOW using the `gpio_put` functions.
 
 This project can be extended to be used as a Password Authenticator in lockers, where you will be granted access whenever the right password is entered.
 
