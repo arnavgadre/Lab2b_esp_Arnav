@@ -42,5 +42,36 @@ https://user-images.githubusercontent.com/52575718/202327135-c4e8d7b4-b6f5-43b4-
 
 ![image](https://user-images.githubusercontent.com/52575718/202328147-a41baf97-8b7b-46b0-9f5d-72abcf775fbc.png)
 
+<br>
 
+## 3) Sequencer Host Keys Macros
 
+In this demonstration, a series of keystrokes from the RP2040's BOOT button are recorded to the host computer's text file and played on the neopixel LED by reading the file from the host. Encoding macros to do actions like recording a sequence (to the host) or playing it allows for this operation (on the RP2040).
+
+<br>
+
+https://user-images.githubusercontent.com/52575718/202329608-325c248a-7ace-47d4-afda-a8327a2e4fe2.mp4
+
+- This program too has 2 parts to it. The RP2040's C code is one of them, and the host's rp2040 `serial macros.py` script is the other. The host script communicates with the RP2040 via the established serial connection.
+
+For the `C` code:
+- The timing between two consecutive key presses, or wait time, is used to encode the sequence of `BOOT` button presses. An integer counter variable is used for this.
+- According to the datasheet, the variables `QTPY_BOOT_PIN_NUM` and `QTPY_BOOT_PIN_REG` are initially set to 21 and ((`volatile_uint32_t*`)(`IO_BANK0_BASE + 0x0A8`)) accordingly. Additionally, the QtPy's `BOOT` pin is set up to operate in `INPUT` mode.
+- Since the python script is accessing the serial communication, the code technically waits for "user input" in the main while loop. Once the "user input" is received, the code checks to see if the input was `r`; if so, it begins recording/monitoring wait time until the `BOOT` button is pressed five times. Using the previously defined address of the `QTPY_BOOT_PIN_REG` register, the status of the `BOOT` button is polled.
+- Once this is done, the code jumps to the beginning of the while loop and waits for the "user input" again.
+- Now, if the "user input" is `p`, the code takes a different branch, which is responsible for playing the sequence on the `Neopixel LED`.
+- In this scenario, the number of times the LED needs to blink is kept track of using a counter called `idx` (which is 5 in this case). Every time the LED blinks, this counter is updated (or, to be more precise, decremented).
+- The while loop is activated and continues until `idx > 0`. The code waits for the data or the wait time to be gathered during the loop. Since it is the Python script that accesses the serial transmission, it also provides this. The `neopixel` is made to blink once the wait time is received, and the `RP2040` waits till the wait time (as the name suggests). This continues until the while loop's condition is not met, at which point the code switches to the main while loop.
+
+For the `Python` script:
+- The python script now includes the macro that the user wants to transmit to the `RP2040`, which is where the user enters the command. `R` and `P`, which stand for `play` and `record`, respectively, are the available alternatives.
+- Here the `pySerial` library is used to access the `COM` port that the RP2040 is connected to.
+- Firstly, an object of the serial class is configured with the right `COM` port number and baudrate. An indefinite while loop is run to get user input (which is the macro) and perform actions accordingly.
+- In the event that the user pushed the `r` key, Python begins reading and storing the `wait_time` that is being sent to the host (or printed into the `tty` by the `RP2040`) in a text file up until the user presses the single `\n` key. This means that a total of `5` keystrokes were captured, and the text file is now closed.
+- The code then skips back to the start of the `while` loop and waits for user input. The code now starts delivering data (which is wait time) to the `RP2040` by reading values from the text file that was saved on the host when the `p` key is pushed. The code continues to examine the `tty`'s output as it performs this in order to see if it ever sees the word `Complete`, which denotes that the play operation is complete. After completing this, the code starts over at the beginning and waits for the user's input.
+- A bash script called `re_build.sh` deletes the old build directory and starts a new one. It then enters it and executes the commands `make`, `cmake`, and so forth. This script was created as a convenience to automate the building procedure.
+- I have pasted a screenshot of the recorded sequence that was stored in the file next to the host.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/52575718/202332743-7d82bc7b-9867-45e3-8aaf-87abd1388b7d.png)
