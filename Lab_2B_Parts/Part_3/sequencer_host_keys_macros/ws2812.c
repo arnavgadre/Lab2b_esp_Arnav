@@ -7,7 +7,7 @@
 #include "ws2812.pio.h"
 #include "registers.h"
 
-#include "/home/ruturajn/Git-Repos/pico/pico-sdk/src/boards/include/boards/adafruit_qtpy_rp2040.h"
+#include "/home/arnavgadre/pico/pico-sdk/src/boards/include/boards/adafruit_qtpy_rp2040.h"
 
 #define IS_RGBW true
 #define NUM_PIXELS 150

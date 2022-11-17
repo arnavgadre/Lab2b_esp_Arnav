@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild-complete.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+		},
+		{
+			"file" : "/home/arnavgadre/Git-Repos/Lab2b_esp_Arnav/Lab_2B_Parts/Part_3/sequencer_device_keys/build/pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"PioasmBuild"
+		],
+		"name" : "PioasmBuild"
+	}
+}
