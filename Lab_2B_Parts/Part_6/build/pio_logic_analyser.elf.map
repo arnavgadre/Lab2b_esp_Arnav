@@ -1169,9 +1169,9 @@ Discarded input sections
  .comment       0x0000000000000000       0x5a CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccI2BIuF.o
- .data          0x0000000000000000        0x0 /tmp/ccI2BIuF.o
- .bss           0x0000000000000000        0x0 /tmp/ccI2BIuF.o
+ .text          0x0000000000000000        0x0 /tmp/ccV2mdFl.o
+ .data          0x0000000000000000        0x0 /tmp/ccV2mdFl.o
+ .bss           0x0000000000000000        0x0 /tmp/ccV2mdFl.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1351,7 +1351,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccI2BIuF.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccV2mdFl.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2518,7 +2518,7 @@ LOAD CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_com
 LOAD CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 LOAD CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-LOAD /tmp/ccI2BIuF.o
+LOAD /tmp/ccV2mdFl.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2636,7 +2636,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000007d4       0x2c CMakeFiles/pio_logic_analyser.dir/home/arnavgadre/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x0000000000000800       0x22 /tmp/ccI2BIuF.o
+                0x0000000000000800       0x22 /tmp/ccV2mdFl.o
  .ARM.attributes
                 0x0000000000000822       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
