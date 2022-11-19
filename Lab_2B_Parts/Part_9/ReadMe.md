@@ -4,5 +4,5 @@ The following demonstration video shows color data acquired from the `APDS9960` 
 
 <br>
 
-https://user-images.githubusercontent.com/52575718/202834159-abab826d-46ba-4eb8-8a58-3d8cd6462292.mp4
+https://user-images.githubusercontent.com/52575718/202834686-8e8cbb71-05cf-4783-a353-87e26a5f3267.mp4
 
