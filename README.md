@@ -2,9 +2,17 @@
 
 This is the overview for the proposal for the expansion board.
 
-## Video of the LED Circuit implemented on Breadboard:
+## Video of the Protoboard:
 
-https://user-images.githubusercontent.com/52575718/197112576-4f32b566-b347-42f6-adba-0a6c65922830.mp4
+<br>
+
+https://user-images.githubusercontent.com/52575718/202836635-c932556d-d04d-4913-acfc-93fc4774dcfd.mp4
+
+<br>
+
+## OLD Proposal:
+
+https://user-images.githubusercontent.com/52575718/202836694-7f6073c9-7193-4021-881f-96ab109ca94d.mp4
 
 <br>
 
