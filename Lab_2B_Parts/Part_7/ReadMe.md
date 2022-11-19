@@ -4,7 +4,7 @@ This is a demonstration video for the PIO Sequencer using the PIO module.
 
 <br>
 
-https://user-images.githubusercontent.com/52575718/202827576-0f30fc7f-48db-4ddd-8b19-9334affc761d.mp4
+https://user-images.githubusercontent.com/52575718/202828011-6a75a256-88ae-48dd-b580-0e804d04060c.mp4
 
 <br>
 
